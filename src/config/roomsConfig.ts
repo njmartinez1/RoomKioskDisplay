@@ -1,0 +1,64 @@
+export const roomsConfig = {
+    creativity: {
+        id: "creativity",
+        name: "Sala Creativity",
+        email: "creativity@reinventedpuembo.edu.ec",
+        tenant: "TenantA",
+        campus: "Puembo",
+        theme: {
+            logo: require("@assets/logos/Logo_Puembo_negro.png"),
+            primary: "#40CCA1",
+            secondary: "#F7D159",
+            text: "#FFFFFF",
+        },
+        background: require("@assets/backgrounds/PlaySummit-21.jpg"),
+    },
+    imagination: {
+        id: "imagination",
+        name: "Sala Imagination",
+        email: "imagination@reinventedpuembo.edu.ec",
+        tenant: "TenantA",
+        campus: "Puembo",
+        theme: {
+            logo: require("@assets/logos/Logo_Puembo_negro.png"),
+            primary: "#40CCA1",
+            secondary: "#F7D159",
+            text: "#FFFFFF",
+        },
+        background: require("@assets/backgrounds/PlaySummit-7.jpg"),
+    },
+    creativitysc: {
+        id: "creativitysc",
+        name: "Sala Creativity",
+        email: "creativity@reinventedsantaclara.edu.ec",
+        tenant: "TenantB",
+        campus: "Santa  Clara",
+        theme: {
+            logo: require("@assets/logos/Santa_clara_negro.png"),
+            primary: "#FFD008",
+            secondary: "#127EFF",
+            third: "#93D50A",
+            text: "#FFFFFF",
+            modalButton: "#127EFF"
+        },
+        background: require("@assets/backgrounds/SantaClara-1.jpg"),
+    },
+    imaginationsc: {
+        id: "imaginationsc",
+        name: "Sala Imagination",
+        email: "imagination@reinventedsantaclara.edu.ec",
+        tenant: "TenantB",
+        campus: "Santa Clara",
+        theme: {
+            logo: require("@assets/logos/Santa_clara_negro.png"),
+            primary: "#FFD008",
+            secondary: "#127EFF",
+            third: "#93D50A",
+            text: "#FFFFFF",
+            modalButton: "#127EFF"
+        },
+        background: require("@assets/backgrounds/SantaClara-2.jpg"),
+    },
+    
+ 
+};

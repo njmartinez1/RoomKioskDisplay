@@ -30,7 +30,6 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({ event, isActive }) => {
     );
 };
 
-// ✅ Aquí está el objeto styles que faltaba
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'rgba(255,255,255,0.15)',
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     activeContainer: {
-        backgroundColor: "rgba(255,255,255,0.35)", // 👈 Más brillante
+        backgroundColor: "rgba(255,255,255,0.35)", 
         borderWidth: 2,
         borderColor: colors.accent,
     },

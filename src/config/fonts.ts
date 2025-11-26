@@ -1,11 +1,15 @@
 const fonts = {
-    title: 36,
+    title: 75,
     subtitle: 24,
-    text: 18,
+    text: 24,
     small: 14,
+    clock: 120,
+    date: 22,
     family: {
         regular: 'System',
         bold: 'System',
+        semibold: 'System',
+        light: 'System',
     },
 };
 

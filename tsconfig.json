@@ -4,12 +4,15 @@
     "strict": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
-    "baseUrl": ".", // 👈 Importante para VS 2022
+    "baseUrl": ".",
     "paths": {
-      "@/*": [ "src/*" ]
+      "@src/*": [ "src/*" ],
+      "@assets/*": [ "assets/*" ],
+      "@components/*": [ "src/components/*" ],
+      "@config/*": [ "src/config/*" ]
     },
-    "allowSyntheticDefaultImports": true, // 👈 Permite default exports en TSX
-    "esModuleInterop": true // 👈 Corrige “no default export”
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": [
     "**/*.ts",
@@ -18,3 +21,4 @@
     "expo-env.d.ts"
   ]
 }
+  

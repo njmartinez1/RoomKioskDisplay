@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import colors from "@/config/colors";
+import colors from "@config/colors";
+
+
 
 // Definimos el tipo de un evento dentro del timeline
 type TimelineEvent = {
@@ -15,18 +17,23 @@ type TimelineItemProps = {
     hour: string;
     events: TimelineEvent[];
     isActive: boolean;
+    theme: {
+        primary: string;
+        secondary: string;
+        text: string;
+    };
 };
 
-export default function TimelineItem({ hour, events = [], isActive }: TimelineItemProps) {
+export default function TimelineItem({ hour, events = [], isActive, theme }: TimelineItemProps) {
     return (
         <View style={[styles.container, isActive && styles.active]}>
             <Text style={styles.hour}>{hour}</Text>
 
             {events.length > 0 ? (
                 events.map((ev, idx) => (
-                    <View key={idx} style={styles.eventBox}>
-                        <Text style={styles.eventTitle}>{ev.title}</Text>
-                        <Text style={styles.eventTime}>
+                    <View key={idx} style={[styles.eventBox, { backgroundColor: theme.primary }]}>
+                        <Text style={[styles.eventTitle, { color: theme.text }]}>{ev.title}</Text>
+                        <Text style={[styles.eventTime, { color: theme.text }]}>
                             {ev.start} - {ev.end}
                         </Text>
                     </View>

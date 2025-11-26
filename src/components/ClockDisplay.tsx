@@ -18,9 +18,9 @@ const ClockDisplay = () => {
 const styles = StyleSheet.create({
     clock: {
         position: 'absolute',
-        bottom: 20,
-        left: 20,
-        fontSize: fonts.subtitle,
+        bottom: 1,
+        left: 0,
+        fontSize: fonts.clock,
         color: colors.text,
     },
 });

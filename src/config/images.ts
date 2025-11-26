@@ -1,11 +1,11 @@
-const images = {
+export default {
     backgrounds: {
-        creativity: require('../../assets/images/favicon.png'),
-        imagination: require('../../assets/images/icon.png'),
+        creativity: require("../../assets/backgrounds/PlaySummit-21.jpg"),
+     //   musica: require("../../assets/backgrounds/musica.jpg"),
+      //  laboratorio: require("../../assets/backgrounds/laboratorio.jpg"),
     },
-    icons: {
-        people: require('../../assets/images/icon.png'),
-    },
+    images: {
+        //logo: require("../../assets/images/logo.png"),
+        logoPuemboBlanco: require("../../assets/images/Logo_Puembo_fondo_blanco.png"),
+    }
 };
-
-export default images;
