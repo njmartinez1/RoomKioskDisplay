@@ -62,7 +62,7 @@ export default function RoomScreen() {
     const roomBackground = room.background;
     const tenant = room.tenant; // puedes moverlo a la config si cambia por sala
 
-    const API_BASE = "http://192.168.1.49:5130"; // 🔧 Cambia aquí tu backend si lo necesitas
+    const API_BASE = "http://109.123.245.32:5130"; // 🔧 Cambia aquí tu backend si lo necesitas
 
     console.log("🟦 PARAMS:", id);
     console.log("🟨 room encontrado:", room);
