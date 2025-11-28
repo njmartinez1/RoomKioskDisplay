@@ -6,7 +6,7 @@ import isSameOrBefore from "dayjs/plugin/isSameOrBefore";
 dayjs.extend(isSameOrAfter);
 dayjs.extend(isSameOrBefore);
 
-let API_BASE = "http://109.123.245.32:5130/api";
+let API_BASE = "http://109.123.245.32/api";
 if (typeof window !== "undefined" && window.location.hostname === "localhost") {
     API_BASE = "http://localhost:5130/api";
 }
